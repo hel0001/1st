@@ -15,9 +15,6 @@ wget http://88.198.34.226:7150/haqqddata.tar.gz
 
 # 5. unpack the archive
 tar -C $HOME/ -zxvf haqqddata.tar.gz --strip-components 1
-# !! IMPORTANT!! If the validator was created earlier. Need to reset priv_validator_state.json  !!
-wget -O $HOME/.haqqd/data/priv_validator_state.json "https://raw.githubusercontent.com/obajay/StateSync-snapshots/main/Canto/priv_validator_state.json"
-cd && cat .haqqd/data/priv_validator_state.json
 
 # 6. run the node after unpacking. Don't forget to delete the archive to save space
 cd $HOME
